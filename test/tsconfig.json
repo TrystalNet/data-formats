@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "outDir": "./bin"
+  },
+  "files": [
+    "../node_modules/@types/jasmine/index.d.ts",
+    "./test.spec.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "bin"
+  ]
+}

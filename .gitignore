@@ -1,0 +1,5 @@
+.vscode
+*.map
+*.log
+node_modules
+test/bin

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "outDir": "../dist"
+  },
+  "files": [
+    "./index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
