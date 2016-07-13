@@ -9,7 +9,7 @@
     "outDir": "../dist"
   },
   "files": [
-    "./index.ts"
+    "./data-formats.ts"
   ],
   "exclude": [
     "node_modules"

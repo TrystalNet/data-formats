@@ -1,9 +1,9 @@
 {
-  "name": "@trystal/trist-formats",
+  "name": "@trystal/data-formats",
   "version": "1.0.0",
   "description": "Code for moving between trists between various storage formats",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/data-formats.js",
+  "typings": "dist/data-formats.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

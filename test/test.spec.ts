@@ -1,7 +1,7 @@
 import {Node, Trist, Cloud} from '@trystal/interfaces'
 
 import {buildChain} from '@trystal/data-gen'
-import {revise} from '../src/trist-formats.ts'
+import {revise} from '../src/data-formats.ts'
 
 const A = 'A', B='B'
 const BOB = 'bob'
