@@ -2,18 +2,21 @@
   "name": "@trystal/trist-formats",
   "version": "1.0.0",
   "description": "Code for moving between trists between various storage formats",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@trystal/interfaces": "^1.7.2",
     "@types/lodash": "^4.0.26-alpha",
     "jasmine-core": "^2.4.1",
     "lodash": "^4.13.1"
   },
   "devDependencies": {
+    "@trystal/data-gen": "^1.2.2",
     "@types/jasmine": "^2.2.28-alpha",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2",

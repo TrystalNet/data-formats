@@ -1,7 +1,7 @@
 declare module "@trystal/trist-formats" {
-  export enum Formats {
-    FMT2015
-  }
 
-  export function sayHello():string
+  import {Trist,Cloud} from "@trystal/interfaces"
+
+  export function revise(cloudTrist:Cloud.Trist, trist:Trist, authorId:string) : Cloud.Trist
+
 }
