@@ -100,4 +100,3 @@ function revise(svrTrist, tristJS, authorId) {
     };
 }
 exports.revise = revise;
-//# sourceMappingURL=index.js.map
