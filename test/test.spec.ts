@@ -1,7 +1,9 @@
-import {Node, Trist, Cloud} from '@trystal/interfaces'
-
+import {JS, Cloud} from '@trystal/interfaces'
 import {buildChain} from '@trystal/data-gen'
 import {revise} from '../src/data-formats.ts'
+
+import Node = JS.Node
+import Trist = JS.Trist 
 
 const A = 'A', B='B'
 const BOB = 'bob'
@@ -14,7 +16,11 @@ function daysFrom(d:Date) {
 
 describe('it does a simple revision to an empty server trist / ', () => {
   let cloudTrist:Cloud.Trist  
-  beforeEach(() => cloudTrist = revise({}, {nodes:buildChain(A)}, BOB))
+  beforeEach(() => {
+    var Q = buildChain(A)
+    var R:JS.Trist = {nodes:Q}
+    cloudTrist = revise({}, R, BOB) 
+  })
   it('it has correct version',() => expect(cloudTrist.version).toBe(20150) )
   it('has exactly one revision',() => expect(cloudTrist.revisions.length).toBe(1))
   it('has the correct number of content records',() => expect(cloudTrist.contents.length).toBe(1))

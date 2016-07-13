@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trystal/interfaces": "^1.7.2",
+    "@trystal/interfaces": "^2.2.2",
     "@types/lodash": "^4.0.26-alpha",
     "jasmine-core": "^2.4.1",
     "lodash": "^4.13.1"
   },
   "devDependencies": {
-    "@trystal/data-gen": "^1.2.2",
+    "@trystal/data-gen": "^1.5.1",
     "@types/jasmine": "^2.2.28-alpha",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2",

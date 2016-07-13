@@ -1,6 +1,13 @@
 import * as _ from 'lodash'
-import {Formats, Payload, IdTable, Trist} from '@trystal/interfaces'
-import {Cloud} from '@trystal/interfaces'
+import {JS,Cloud} from '@trystal/interfaces'
+
+import Formats = Cloud.Formats
+import IdTable = JS.IdTable
+import Trist = JS.Trist
+import Payload = JS.Payload
+
+
+// import Formats = JS, Payload, IdTable, Trist
 
 interface IServer {
   ids:string[]
