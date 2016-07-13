@@ -1,6 +1,6 @@
 {
   "name": "@trystal/data-formats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Code for moving between trists between various storage formats",
   "main": "dist/data-formats.js",
   "typings": "dist/data-formats.d.ts",

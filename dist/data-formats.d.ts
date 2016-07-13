@@ -1,4 +1,4 @@
-declare module "@trystal/trist-formats" {
+declare module "@trystal/data-formats" {
 
   import {Trist,Cloud} from "@trystal/interfaces"
 
