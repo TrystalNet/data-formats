@@ -1,9 +1,6 @@
-import {JS, Cloud} from '@trystal/interfaces'
+import {Node, Trist, Cloud} from '@trystal/interfaces'
 import {buildChain} from '@trystal/data-gen'
 import {revise} from '../src/data-formats.ts'
-
-import Node = JS.Node
-import Trist = JS.Trist 
 
 const A = 'A', B='B'
 const BOB = 'bob'
@@ -18,7 +15,7 @@ describe('it does a simple revision to an empty server trist / ', () => {
   let cloudTrist:Cloud.Trist  
   beforeEach(() => {
     var Q = buildChain(A)
-    var R:JS.Trist = {nodes:Q}
+    var R:Trist = {nodes:Q}
     cloudTrist = revise({}, R, BOB) 
   })
   it('it has correct version',() => expect(cloudTrist.version).toBe(20150) )
@@ -37,7 +34,7 @@ describe('it does a simple revision to an empty server trist / ', () => {
 })
 
 describe('it does a simple revision that has two lines / ', () => {
-  let cloudTrist:Cloud.Trist  
+  let cloudTrist:Cloud.Trist
   beforeEach(() => cloudTrist = revise({}, {nodes: buildChain('A.B')}, BOB))
   it('it has correct version',() => expect(cloudTrist.version).toBe(20150) )
   it('has exactly one revision',() => expect(cloudTrist.revisions.length).toBe(1))

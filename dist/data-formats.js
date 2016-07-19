@@ -1,7 +1,6 @@
 "use strict";
 var _ = require('lodash');
-var interfaces_1 = require('@trystal/interfaces');
-var Formats = interfaces_1.Cloud.Formats;
+var constants_1 = require('@trystal/constants');
 function buildServer(svrTrist) {
     return {
         ids: [],
@@ -93,7 +92,7 @@ function revise(svrTrist, tristJS, authorId) {
     });
     _.each(revision.dels, function (id) { return SERVER.mapIndex[id].isDeleted = true; });
     SERVER.trist.revisions.push(revision);
-    var version = Formats.FMT2015;
+    var version = constants_1.Formats.FMT2015;
     var map = SERVER.trist.map;
     var contents = SERVER.trist.contents;
     var revisions = SERVER.trist.revisions;

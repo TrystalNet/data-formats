@@ -1,13 +1,6 @@
 import * as _ from 'lodash'
-import {JS,Cloud} from '@trystal/interfaces'
-
-import Formats = Cloud.Formats
-import IdTable = JS.IdTable
-import Trist = JS.Trist
-import Payload = JS.Payload
-
-
-// import Formats = JS, Payload, IdTable, Trist
+import {Formats} from '@trystal/constants' 
+import {IdTable, Trist, Payload, Cloud} from '@trystal/interfaces'
 
 interface IServer {
   ids:string[]
@@ -42,7 +35,6 @@ function diff_wordMode(text1:string, text2:string):null {
   dmp.diff_charsToLines_(diffs, lineArray)
   return diffs;*/
 }
-
 function buildRevision(authorId:string,  clientIds:string[],  serverIds:string[],  common:string[],  contentIndex:IdTable<Cloud.ContentItem>,  trist:Trist) : Cloud.Revision {
   function buildEdit(lineId:string, oldText:string, trystup:string) : Cloud.Edit {
     let isPatch = (oldText.length > 5 || trystup.length > 5)
@@ -73,10 +65,10 @@ function buildRevision(authorId:string,  clientIds:string[],  serverIds:string[]
   return revision
 }
 
-// // // note: external code will have to convert tristIM to tristJS for thi to work
-// // // we don't want to pull in the whole immutable infrastructure just to tis conversion 
-// // // when the code just works off the js anyway
-// // // later, if and when we convert to using IM directly, we can make the adjustment then
+// note: external code will have to convert tristIM to tristJS for thi to work
+// we don't want to pull in the whole immutable infrastructure just to tis conversion 
+// when the code just works off the js anyway
+// later, if and when we convert to using IM directly, we can make the adjustment then
 export function revise(svrTrist:Cloud.Trist, tristJS:Trist, authorId:string) : Cloud.Trist {
   const SERVER = buildServer(svrTrist)
   const clientIds = _.keys(tristJS.nodes)

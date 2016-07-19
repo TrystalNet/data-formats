@@ -1,6 +1,6 @@
 {
   "name": "@trystal/data-formats",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Code for moving between trists between various storage formats",
   "main": "dist/data-formats.js",
   "typings": "dist/data-formats.d.ts",
@@ -10,13 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trystal/interfaces": "^2.2.2",
+    "@trystal/constants": "^1.2.1",
+    "@trystal/interfaces": "^3.0.0",
     "@types/lodash": "^4.0.26-alpha",
     "jasmine-core": "^2.4.1",
     "lodash": "^4.13.1"
   },
   "devDependencies": {
-    "@trystal/data-gen": "^1.5.1",
+    "@trystal/data-gen": "^1.6.0",
     "@types/jasmine": "^2.2.28-alpha",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2",
