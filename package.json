@@ -1,9 +1,9 @@
 {
   "name": "@trystal/data-formats",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Code for moving between trists between various storage formats",
-  "main": "dist/data-formats.js",
-  "typings": "dist/data-formats.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +14,8 @@
   "author": "Terence O'Neill",
   "license": "ISC",
   "dependencies": {
-    "@trystal/constants": "^1.2.1",
-    "@trystal/interfaces": "^3.0.0",
+    "@trystal/constants": "^1.4.2",
+    "@trystal/interfaces": "^3.0.2",
     "@types/lodash": "^4.0.26-alpha",
     "jasmine-core": "^2.4.1",
     "lodash": "^4.13.1"
