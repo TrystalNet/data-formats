@@ -12,7 +12,7 @@ interface IServer {
     revisions: Cloud.Revision[]
   }
 }
-function buildServer(svrTrist:Cloud.Trist): IServer {
+function buildServer(svrTrist:Cloud.Trist|null): IServer {
   return {
     ids:[], 
     contentIndex:{},
@@ -69,7 +69,7 @@ function buildRevision(authorId:string,  clientIds:string[],  serverIds:string[]
 // we don't want to pull in the whole immutable infrastructure just to tis conversion 
 // when the code just works off the js anyway
 // later, if and when we convert to using IM directly, we can make the adjustment then
-export function revise(svrTrist:Cloud.Trist, tristJS:Trist, authorId:string) : Cloud.Trist {
+export function revise(svrTrist:Cloud.Trist|null, tristJS:Trist, authorId:string) : Cloud.Trist {
   const SERVER = buildServer(svrTrist)
   const clientIds = _.keys(tristJS.nodes)
   const common = _.intersection(clientIds, SERVER.ids)           // (BCD,ABC) => BC
