@@ -16,7 +16,7 @@
   "dependencies": {
     "@trystal/constants": "^1.4.2",
     "@trystal/interfaces": "^3.0.2",
-    "@types/lodash": "^4.0.26-alpha",
+    "@types/lodash": "0.0.28",
     "jasmine-core": "^2.4.1",
     "lodash": "^4.13.1"
   },

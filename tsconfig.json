@@ -6,12 +6,13 @@
     "noImplicitAny": true,
     "sourceMap": false,
     "strictNullChecks": true,
-    "outDir": "../dist"
+    "outDir": "dist"
   },
   "files": [
     "./index.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ]
 }
